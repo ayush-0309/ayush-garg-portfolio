@@ -1,26 +1,106 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* fixed accents — read the same in both themes */
+  --brass: #c9973f;
+  --brass-bright: #e8bd6e;
+  --leather: #b5342a;
+  --plant: #5c8f47;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* desk & room tokens — flip between light and dark viewer themes */
+  --wall: #f2e9d8;
+  --wall-soft: #eaddc4;
+  --wood: #b9835a;
+  --wood-light: #d1a578;
+  --wood-dark: #8a5c3a;
+  --wood-deep: #5c3c22;
+  --ink: #221a12;
+  --ink-soft: #5a4a38;
+  --line: rgba(34, 26, 18, 0.14);
+  --surface: #fffaf0;
+  --surface-raised: #fbf6ea;
+  --shadow: rgba(60, 40, 20, 0.18);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme="light"]) {
+    --wall: #171009;
+    --wall-soft: #1f160d;
+    --wood: #7a5236;
+    --wood-light: #8f6540;
+    --wood-dark: #5c3c22;
+    --wood-deep: #34200f;
+    --ink: #f0e6d8;
+    --ink-soft: #b7a890;
+    --line: rgba(240, 230, 216, 0.14);
+    --surface: #211a12;
+    --surface-raised: #271f15;
+    --shadow: rgba(0, 0, 0, 0.55);
   }
 }
 
+:root[data-theme="dark"] {
+  --wall: #171009;
+  --wall-soft: #1f160d;
+  --wood: #7a5236;
+  --wood-light: #8f6540;
+  --wood-dark: #5c3c22;
+  --wood-deep: #34200f;
+  --ink: #f0e6d8;
+  --ink-soft: #b7a890;
+  --line: rgba(240, 230, 216, 0.14);
+  --surface: #211a12;
+  --surface-raised: #271f15;
+  --shadow: rgba(0, 0, 0, 0.55);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--wall);
+  color: var(--ink);
+  font-family: var(--font-body), "Manrope", ui-sans-serif, system-ui, sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display), "Fraunces", Georgia, serif;
+  text-wrap: balance;
+  margin: 0;
+}
+
+.font-mono-stat {
+  font-family: var(--font-mono), "Space Mono", ui-monospace, monospace;
+}
+
+::selection {
+  background: var(--brass);
+  color: var(--wood-deep);
+}
+
+a {
+  color: inherit;
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 3px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }
