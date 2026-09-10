@@ -31,6 +31,15 @@ const PROJECTS = [
     href: "https://www.youtube.com/watch?v=sN6DwEsyUS4",
   },
   {
+    title: "Roof Repairs London",
+    stack: "Web Design · Client Project",
+    time: "2026",
+    detail:
+      "A lead-generation website built for a London roofing company — service pages, trust signals, and a quote-request flow designed to convert emergency and same-day repair enquiries.",
+    featured: false,
+    href: "https://ayush-0309.github.io/roof-repairs-london/",
+  },
+  {
     title: "Cricket Analytics Dashboard",
     stack: "Power BI · Python",
     time: "Jul 2025",
