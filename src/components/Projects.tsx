@@ -8,7 +8,7 @@ const PROJECTS = [
     stack: "Marketing Strategy · GTM",
     time: "2026",
     detail:
-      "Led a team of 5 to a win at Masters' Union's Marketing Strategies One-Day Challenge — a growth plan tackling goSTOPS' seasonal occupancy gap by building new demand in the JAS quarter through targeted segments and differentiated experiences.",
+      "Part of a 5-person team that won Masters' Union's Marketing Strategies One-Day Challenge — a growth plan tackling goSTOPS' seasonal occupancy gap by building new demand in the JAS quarter through targeted segments and differentiated experiences.",
     featured: true,
   },
   {
