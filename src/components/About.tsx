@@ -9,6 +9,12 @@ const STATS = [
   { label: "IEEE members led", target: 100, suffix: "+" },
 ];
 
+const FACTS = [
+  { label: "Location", value: "Gurugram, India" },
+  { label: "Focus", value: "Founder's Office · Marketing" },
+  { label: "Status", value: "Open to opportunities, 2026" },
+];
+
 const SKILL_GROUPS = [
   {
     group: "Business",
@@ -36,13 +42,34 @@ export default function About() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--accent)" }}>
-            About
-          </p>
-          <h2 className="mt-4 text-4xl sm:text-5xl" style={{ color: "var(--ink)" }}>
-            From engineering to strategy.
-          </h2>
-          <div className="mt-8 grid grid-cols-3 gap-4 border-y py-6" style={{ borderColor: "var(--line)" }}>
+          <div className="flex items-center gap-4">
+            <span
+              className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full text-lg italic"
+              style={{
+                fontFamily: "var(--font-display), serif",
+                background: "color-mix(in srgb, var(--accent) 16%, transparent)",
+                color: "var(--accent)",
+                border: "1px solid color-mix(in srgb, var(--accent) 35%, transparent)",
+              }}
+            >
+              AG
+            </span>
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--accent)" }}>
+                About
+              </p>
+              <h2 className="mt-1 text-4xl sm:text-5xl" style={{ color: "var(--ink)" }}>
+                From engineering
+                <br />
+                to strategy.
+              </h2>
+            </div>
+          </div>
+
+          <div
+            className="mt-8 grid grid-cols-3 gap-4 rounded-xl border p-5"
+            style={{ borderColor: "var(--line)", background: "var(--surface-raised)" }}
+          >
             {STATS.map((s) => (
               <div key={s.label}>
                 <p className="text-2xl sm:text-3xl" style={{ color: "var(--ink)" }}>
@@ -51,6 +78,23 @@ export default function About() {
                 <p className="mt-1 text-xs uppercase tracking-[0.06em]" style={{ color: "var(--ink-faint)" }}>
                   {s.label}
                 </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-4 flex flex-col rounded-xl border" style={{ borderColor: "var(--line)" }}>
+            {FACTS.map((f, i) => (
+              <div
+                key={f.label}
+                className="flex items-center justify-between gap-4 px-5 py-3.5"
+                style={{ borderTop: i === 0 ? "none" : "1px solid var(--line)" }}
+              >
+                <span className="text-xs font-semibold uppercase tracking-[0.08em]" style={{ color: "var(--ink-faint)" }}>
+                  {f.label}
+                </span>
+                <span className="text-sm font-medium" style={{ color: "var(--ink)" }}>
+                  {f.value}
+                </span>
               </div>
             ))}
           </div>
@@ -81,7 +125,7 @@ export default function About() {
           <div className="mt-8 flex flex-col gap-4">
             {SKILL_GROUPS.map((g) => (
               <div key={g.group} className="flex flex-wrap items-center gap-2">
-                <span className="font-mono w-24 shrink-0 text-[11px] uppercase tracking-[0.1em]" style={{ color: "var(--accent)" }}>
+                <span className="w-24 shrink-0 text-[11px] font-semibold uppercase tracking-[0.1em]" style={{ color: "var(--accent)" }}>
                   {g.group}
                 </span>
                 {g.skills.map((skill) => (
