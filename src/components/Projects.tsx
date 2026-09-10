@@ -19,14 +19,6 @@ const PROJECTS = [
     detail:
       "Front-end app with secure authentication, playlist management, and a reusable component architecture built for scale.",
   },
-  {
-    id: "03",
-    title: "Real-time Chat Application",
-    stack: "React · Firebase",
-    time: "Jul 2023",
-    detail:
-      "Real-time messaging with Firebase Authentication, built to support secure group communication and collaboration.",
-  },
 ];
 
 export default function Projects() {
@@ -48,7 +40,7 @@ export default function Projects() {
           </h2>
         </motion.div>
 
-        <div className="grid gap-5 sm:grid-cols-3">
+        <div className="grid gap-5 sm:grid-cols-2">
           {PROJECTS.map((p, i) => (
             <motion.div
               key={p.id}

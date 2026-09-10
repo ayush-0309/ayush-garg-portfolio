@@ -10,9 +10,9 @@ const STATS = [
 ];
 
 const SKILL_GROUPS = [
-  { group: "Business", skills: ["Strategic thinking", "Business analysis", "Stakeholder management", "Project management", "Process optimization"] },
-  { group: "Analytics", skills: ["Power BI", "SQL", "Python", "Advanced Excel", "Dashboarding"] },
-  { group: "Technical", skills: ["C / C++", "Linux", "Bash", "Git", "JIRA"] },
+  { group: "Business", skills: ["Strategic thinking", "Stakeholder management", "Project management"] },
+  { group: "Analytics", skills: ["Power BI", "SQL", "Python"] },
+  { group: "Technical", skills: ["C / C++", "Linux", "Git"] },
 ];
 
 export default function About() {

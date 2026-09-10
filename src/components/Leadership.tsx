@@ -4,22 +4,17 @@ import { motion } from "framer-motion";
 
 const BULLETS = [
   "Led a 100+ member IEEE student chapter, driving engagement through 10+ technical events.",
-  "Launched 2 flagship initiatives, expanding learning opportunities for members.",
   "Raised sponsorships by 30% (₹40,000+) through industry outreach and relationship building.",
   "Ran end-to-end speaker sessions with leaders from Google and Microsoft for 100–200+ attendees.",
-  "Started the chapter's YouTube channel, strengthening its digital presence.",
 ];
 
 const CERTS = [
   { name: "Foundations of Digital Marketing & E-commerce", org: "Coursera · Google", date: "Mar 2026" },
   { name: "Product Management Fundamentals", org: "Udemy", date: "Jan 2026" },
-  { name: "Power BI Master Class — Dashboards & Service", org: "Udemy", date: "Nov 2025" },
-  { name: "Security, Compliance & Identity Fundamentals", org: "Microsoft", date: "Jun 2023" },
 ];
 
 const HONOURS = [
   { year: "2018", title: "National Champion (U-16), Javelin Throw — National Youth Games Committee" },
-  { year: "2018", title: "1st Position, Inter-House Basketball Tournament" },
   { year: "2017", title: "Certificate of Merit — Subject Topper in Mathematics (97%)" },
 ];
 

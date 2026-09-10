@@ -7,31 +7,11 @@ const ROLE = {
   org: "Tata Consultancy Services",
   time: "Jul 2024 — Feb 2026",
   place: "Bengaluru",
-  groups: [
-    {
-      label: "Software development & optimization",
-      bullets: [
-        "Developed embedded C/C++ communication modules (UART, CAN, IPC) for an IABP medical device.",
-        "Implemented state-machine logic from functional requirements to control embedded device workflows.",
-        "Performed embedded Linux debugging to resolve integration and communication issues.",
-      ],
-    },
-    {
-      label: "Problem solving & process improvement",
-      bullets: [
-        "Automated Linux-based validation using Bash, reducing manual testing effort by 25%.",
-        "Built validation utilities supporting 8–10 healthcare product releases before production.",
-        "Resolved software defects through structured root-cause analysis, improving stability.",
-      ],
-    },
-    {
-      label: "Cross-functional collaboration",
-      bullets: [
-        "Coordinated with global engineering and QA teams across distributed Agile teams.",
-        "Resolved technical queries with global stakeholders to enable timely feature delivery.",
-        "Built dashboards and presentations for project reviews and milestone tracking.",
-      ],
-    },
+  bullets: [
+    "Developed embedded C/C++ communication modules (UART, CAN, IPC) for an IABP medical device.",
+    "Automated Linux-based validation with Bash, cutting manual testing effort by 25%.",
+    "Built validation utilities supporting 8–10 healthcare product releases before production.",
+    "Coordinated with global engineering and QA teams across distributed Agile teams.",
   ],
 };
 
@@ -76,22 +56,14 @@ export default function Experience() {
             </span>
           </div>
 
-          <div className="mt-6 grid gap-8 sm:grid-cols-3">
-            {ROLE.groups.map((g) => (
-              <div key={g.label}>
-                <p className="font-mono text-[11px] uppercase tracking-[0.1em]" style={{ color: "var(--accent)" }}>
-                  {g.label}
-                </p>
-                <ul className="mt-3 space-y-2.5">
-                  {g.bullets.map((b) => (
-                    <li key={b} className="text-sm leading-relaxed" style={{ color: "var(--ink-soft)" }}>
-                      {b}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+          <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+            {ROLE.bullets.map((b) => (
+              <li key={b} className="flex gap-3 text-sm leading-relaxed" style={{ color: "var(--ink-soft)" }}>
+                <span className="mt-2 h-1 w-1 shrink-0 rounded-full" style={{ background: "var(--accent)" }} />
+                {b}
+              </li>
             ))}
-          </div>
+          </ul>
         </motion.div>
       </div>
     </section>
