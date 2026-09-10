@@ -61,15 +61,9 @@ export default function Contact() {
           ))}
         </motion.div>
 
-        <div
-          className="mt-16 flex flex-col items-start justify-between gap-3 border-t pt-8 sm:flex-row sm:items-center"
-          style={{ borderColor: "var(--line)" }}
-        >
+        <div className="mt-16 border-t pt-8" style={{ borderColor: "var(--line)" }}>
           <span className="text-xs font-medium uppercase tracking-[0.1em]" style={{ color: "var(--ink-faint)" }}>
             Ayush Garg · Masters&rsquo; Union, Class of 2027
-          </span>
-          <span className="text-xs font-medium uppercase tracking-[0.1em]" style={{ color: "var(--ink-faint)" }}>
-            Built with Next.js
           </span>
         </div>
       </div>
