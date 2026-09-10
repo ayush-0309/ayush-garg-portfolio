@@ -26,8 +26,8 @@ export default function Experience() {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <p className="font-mono text-xs uppercase tracking-[0.18em]" style={{ color: "var(--accent)" }}>
-            Fig. 03 — Experience
+          <p className="text-sm font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--accent)" }}>
+            Experience
           </p>
           <h2 className="mt-4 max-w-xl text-4xl sm:text-5xl" style={{ color: "var(--ink)" }}>
             Nineteen months of shipping medical-device software
@@ -39,7 +39,7 @@ export default function Experience() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6 }}
-          className="corner-brackets rounded-lg border p-7 md:p-10"
+          className="lift-on-hover rounded-lg border p-7 md:p-10"
           style={{ borderColor: "var(--line)", background: "var(--surface)" }}
         >
           <div className="flex flex-wrap items-baseline justify-between gap-3 border-b pb-5" style={{ borderColor: "var(--line)" }}>
@@ -51,7 +51,7 @@ export default function Experience() {
                 {ROLE.org}
               </p>
             </div>
-            <span className="font-mono text-xs uppercase tracking-[0.1em]" style={{ color: "var(--ink-faint)" }}>
+            <span className="text-xs font-medium uppercase tracking-[0.08em]" style={{ color: "var(--ink-faint)" }}>
               {ROLE.time} · {ROLE.place}
             </span>
           </div>

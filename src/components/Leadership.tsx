@@ -28,13 +28,13 @@ export default function Leadership() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
         >
-          <p className="font-mono text-xs uppercase tracking-[0.18em]" style={{ color: "var(--accent)" }}>
-            Fig. 05 — Leadership
+          <p className="text-sm font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--accent)" }}>
+            Leadership
           </p>
           <h2 className="mt-4 text-4xl sm:text-5xl" style={{ color: "var(--ink)" }}>
             Chairperson, IEEE-SSIT VIT
           </h2>
-          <p className="font-mono mt-2 text-xs uppercase tracking-[0.08em]" style={{ color: "var(--ink-faint)" }}>
+          <p className="mt-2 text-xs font-medium uppercase tracking-[0.08em]" style={{ color: "var(--ink-faint)" }}>
             Jan 2022 — Jan 2023
           </p>
           <ul className="mt-6 space-y-3">
@@ -55,7 +55,7 @@ export default function Leadership() {
           className="flex flex-col gap-10"
         >
           <div>
-            <p className="font-mono text-[11px] uppercase tracking-[0.1em]" style={{ color: "var(--accent)" }}>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.1em]" style={{ color: "var(--accent)" }}>
               Certifications
             </p>
             <div className="mt-3 flex flex-col divide-y" style={{ borderColor: "var(--line)" }}>
@@ -64,7 +64,7 @@ export default function Leadership() {
                   <span className="text-sm" style={{ color: "var(--ink)" }}>
                     {c.name}
                   </span>
-                  <span className="font-mono shrink-0 text-[10px] uppercase tracking-[0.06em]" style={{ color: "var(--ink-faint)" }}>
+                  <span className="shrink-0 text-[10px] font-medium uppercase tracking-[0.06em]" style={{ color: "var(--ink-faint)" }}>
                     {c.date}
                   </span>
                 </div>
@@ -73,13 +73,13 @@ export default function Leadership() {
           </div>
 
           <div>
-            <p className="font-mono text-[11px] uppercase tracking-[0.1em]" style={{ color: "var(--accent)" }}>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.1em]" style={{ color: "var(--accent)" }}>
               Achievements
             </p>
             <div className="mt-3 flex flex-col gap-3">
               {HONOURS.map((h) => (
                 <div key={h.title} className="flex items-baseline gap-3">
-                  <span className="font-mono text-sm" style={{ color: "var(--ink-faint)" }}>
+                  <span className="text-sm font-semibold" style={{ color: "var(--ink-faint)" }}>
                     {h.year}
                   </span>
                   <span className="text-sm" style={{ color: "var(--ink-soft)" }}>

@@ -50,8 +50,8 @@ export default function Nav() {
       }}
     >
       <nav className="container-page flex items-center justify-between py-4">
-        <a href="#top" className="font-mono text-sm tracking-tight focus-ring rounded-sm" style={{ color: "var(--ink)" }}>
-          AYUSH GARG
+        <a href="#top" className="focus-ring rounded-sm text-lg italic" style={{ fontFamily: "var(--font-display), serif", color: "var(--ink)" }}>
+          Ayush Garg
         </a>
         <ul className="hidden items-center gap-1 md:flex">
           {LINKS.map((l) => (

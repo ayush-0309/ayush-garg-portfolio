@@ -31,7 +31,7 @@ export default function CountUp({
   }, [spring, decimals, suffix]);
 
   return (
-    <span ref={ref} className={`font-mono-stat tabular-nums ${className ?? ""}`}>
+    <span ref={ref} className={`tabular-nums ${className ?? ""}`}>
       {display}
     </span>
   );

@@ -4,31 +4,30 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section id="top" className="grid-paper relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
+    <section id="top" className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
       <div className="container-page">
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="font-mono flex items-center gap-2 text-xs uppercase tracking-[0.18em]"
-          style={{ color: "var(--ink-faint)" }}
+          className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.14em]"
+          style={{ color: "var(--accent)" }}
         >
-          <span className="h-1.5 w-1.5 rounded-full" style={{ background: "var(--accent)" }} />
-          Fig. 01 — Introduction
+          Founder&rsquo;s Office · Marketing
         </motion.p>
 
         <motion.h1
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-6 max-w-3xl text-[2.75rem] leading-[1.04] sm:text-6xl md:text-7xl"
+          className="mt-6 max-w-3xl text-[2.75rem] leading-[1.05] sm:text-6xl md:text-7xl"
           style={{ color: "var(--ink)" }}
         >
-          Ayush Garg builds{" "}
+          Ayush Garg turns ambiguity into a{" "}
           <span className="italic" style={{ color: "var(--accent)" }}>
-            systems
+            plan
           </span>{" "}
-          — for hardware, and now for business.
+          people can act on.
         </motion.h1>
 
         <motion.p
@@ -38,10 +37,10 @@ export default function Hero() {
           className="mt-7 max-w-xl text-lg leading-relaxed sm:text-xl"
           style={{ color: "var(--ink-soft)" }}
         >
-          Technology &amp; Business Management student at Masters&rsquo; Union.
-          Formerly a Systems Engineer at TCS, shipping embedded software for
-          medical devices. Now pointed at Founder&rsquo;s Office and Marketing —
-          same structured problem-solving, aimed at business.
+          Technology &amp; Business Management student at Masters&rsquo; Union,
+          building toward Founder&rsquo;s Office and Marketing roles — with a
+          foundation in structured problem-solving from nineteen months as a
+          Systems Engineer at TCS.
         </motion.p>
 
         <motion.div
@@ -80,8 +79,15 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.6 }}
-        className="pointer-events-none absolute -right-24 top-16 hidden h-72 w-72 rounded-full blur-[100px] md:block"
-        style={{ background: "var(--accent-bright)", opacity: 0.18 }}
+        className="pointer-events-none absolute -right-32 top-10 hidden h-96 w-96 rounded-full blur-[120px] md:block"
+        style={{ background: "var(--accent-bright)", opacity: 0.22 }}
+      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.7 }}
+        className="pointer-events-none absolute -left-24 bottom-0 hidden h-64 w-64 rounded-full blur-[110px] md:block"
+        style={{ background: "var(--accent)", opacity: 0.12 }}
       />
     </section>
   );

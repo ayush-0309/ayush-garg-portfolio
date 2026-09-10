@@ -17,8 +17,8 @@ export default function Contact() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
         >
-          <p className="font-mono text-xs uppercase tracking-[0.18em]" style={{ color: "var(--accent)" }}>
-            Fig. 06 — Contact
+          <p className="text-sm font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--accent)" }}>
+            Contact
           </p>
           <h2 className="mt-4 max-w-xl text-4xl sm:text-6xl" style={{ color: "var(--ink)" }}>
             Let&rsquo;s build something.
@@ -47,14 +47,14 @@ export default function Contact() {
               style={{ background: "var(--surface)" }}
             >
               <div>
-                <p className="font-mono text-[11px] uppercase tracking-[0.1em]" style={{ color: "var(--accent)" }}>
+                <p className="text-[11px] font-semibold uppercase tracking-[0.1em]" style={{ color: "var(--accent)" }}>
                   {c.label}
                 </p>
                 <p className="mt-1 text-base font-medium" style={{ color: "var(--ink)" }}>
                   {c.value}
                 </p>
               </div>
-              <span className="font-mono text-lg" style={{ color: "var(--ink-faint)" }}>
+              <span className="text-lg" style={{ color: "var(--ink-faint)" }}>
                 ↗
               </span>
             </a>
@@ -65,10 +65,10 @@ export default function Contact() {
           className="mt-16 flex flex-col items-start justify-between gap-3 border-t pt-8 sm:flex-row sm:items-center"
           style={{ borderColor: "var(--line)" }}
         >
-          <span className="font-mono text-xs uppercase tracking-[0.1em]" style={{ color: "var(--ink-faint)" }}>
+          <span className="text-xs font-medium uppercase tracking-[0.1em]" style={{ color: "var(--ink-faint)" }}>
             Ayush Garg · Masters&rsquo; Union, Class of 2027
           </span>
-          <span className="font-mono text-xs uppercase tracking-[0.1em]" style={{ color: "var(--ink-faint)" }}>
+          <span className="text-xs font-medium uppercase tracking-[0.1em]" style={{ color: "var(--ink-faint)" }}>
             Built with Next.js
           </span>
         </div>

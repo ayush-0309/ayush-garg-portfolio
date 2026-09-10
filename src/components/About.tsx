@@ -25,8 +25,8 @@ export default function About() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
         >
-          <p className="font-mono text-xs uppercase tracking-[0.18em]" style={{ color: "var(--accent)" }}>
-            Fig. 02 — About
+          <p className="text-sm font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--accent)" }}>
+            About
           </p>
           <h2 className="mt-4 text-4xl sm:text-5xl" style={{ color: "var(--ink)" }}>
             From firmware to strategy.
