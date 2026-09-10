@@ -22,6 +22,15 @@ const PROJECTS = [
     href: "https://cross-the-indian-road.lovable.app/",
   },
   {
+    title: "Coffee Shop Inventory Automation",
+    stack: "Make · Airtable · Gmail",
+    time: "2026",
+    detail:
+      "A two-scenario Make.com automation for a coffee shop: new orders deduct ingredient stock via recipe lookups and trigger low-stock reorder alerts, while stock-in entries update inventory and send restock confirmations — with error-handling branches that email a manual-check alert if anything fails.",
+    featured: false,
+    href: "https://www.youtube.com/watch?v=sN6DwEsyUS4",
+  },
+  {
     title: "Cricket Analytics Dashboard",
     stack: "Power BI · Python",
     time: "Jul 2025",
