@@ -10,6 +10,16 @@ const PROJECTS = [
     detail:
       "Part of a 5-person team that won Masters' Union's Marketing Strategies One-Day Challenge — a growth plan tackling goSTOPS' seasonal occupancy gap by building new demand in the JAS quarter through targeted segments and differentiated experiences.",
     featured: true,
+    href: undefined as string | undefined,
+  },
+  {
+    title: "Cross the Indian Road",
+    stack: "Game Design · Lovable",
+    time: "2026",
+    detail:
+      "A browser-based endless runner built solo with Lovable — dodge autos, cows, and wedding processions on a chaotic Indian street, with character select, a leaderboard, and daily challenges.",
+    featured: false,
+    href: "https://cross-the-indian-road.lovable.app/",
   },
   {
     title: "Cricket Analytics Dashboard",
@@ -18,6 +28,7 @@ const PROJECTS = [
     detail:
       "Interactive dashboard analyzing player performance datasets, with KPI metrics designed to support data-driven team selection.",
     featured: false,
+    href: undefined as string | undefined,
   },
   {
     title: "Music Streaming Platform",
@@ -26,6 +37,7 @@ const PROJECTS = [
     detail:
       "Front-end app with secure authentication, playlist management, and a reusable component architecture built for scale.",
     featured: false,
+    href: undefined as string | undefined,
   },
 ];
 
@@ -88,35 +100,44 @@ export default function Projects() {
           ))}
 
           <div className="grid gap-5 sm:grid-cols-2">
-            {PROJECTS.filter((p) => !p.featured).map((p, i) => (
-              <motion.div
-                key={p.title}
-                initial={{ opacity: 0, y: 22 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="lift-on-hover flex flex-col rounded-xl border p-6"
-                style={{ borderColor: "var(--line)", background: "var(--surface-raised)" }}
-              >
-                <div className="flex items-center justify-between">
-                  <span
-                    className="rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.06em]"
-                    style={{ background: "color-mix(in srgb, var(--accent) 14%, transparent)", color: "var(--accent)" }}
-                  >
-                    {p.stack}
-                  </span>
-                  <span className="text-xs font-medium" style={{ color: "var(--ink-faint)" }}>
-                    {p.time}
-                  </span>
-                </div>
-                <h3 className="mt-4 text-xl leading-snug" style={{ color: "var(--ink)" }}>
-                  {p.title}
-                </h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed" style={{ color: "var(--ink-soft)" }}>
-                  {p.detail}
-                </p>
-              </motion.div>
-            ))}
+            {PROJECTS.filter((p) => !p.featured).map((p, i) => {
+              const Card = p.href ? motion.a : motion.div;
+              return (
+                <Card
+                  key={p.title}
+                  {...(p.href ? { href: p.href, target: "_blank", rel: "noopener noreferrer" } : {})}
+                  initial={{ opacity: 0, y: 22 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-60px" }}
+                  transition={{ duration: 0.5, delay: i * 0.08 }}
+                  className="focus-ring lift-on-hover flex flex-col rounded-xl border p-6"
+                  style={{ borderColor: "var(--line)", background: "var(--surface-raised)" }}
+                >
+                  <div className="flex items-center justify-between">
+                    <span
+                      className="rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.06em]"
+                      style={{ background: "color-mix(in srgb, var(--accent) 14%, transparent)", color: "var(--accent)" }}
+                    >
+                      {p.stack}
+                    </span>
+                    <span className="text-xs font-medium" style={{ color: "var(--ink-faint)" }}>
+                      {p.time}
+                    </span>
+                  </div>
+                  <h3 className="mt-4 flex items-center gap-1.5 text-xl leading-snug" style={{ color: "var(--ink)" }}>
+                    {p.title}
+                    {p.href && (
+                      <span className="text-base" style={{ color: "var(--accent)" }}>
+                        ↗
+                      </span>
+                    )}
+                  </h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed" style={{ color: "var(--ink-soft)" }}>
+                    {p.detail}
+                  </p>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </div>
