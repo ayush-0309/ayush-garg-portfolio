@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const CHANNELS = [
-  { label: "Email", value: "ayush.garg2027@mastersunion.org", href: "mailto:ayush.garg2027@mastersunion.org" },
+  { label: "Email", value: "officialayushgarg@gmail.com", href: "mailto:officialayushgarg@gmail.com" },
   { label: "LinkedIn", value: "linkedin.com/in/ayush0309", href: "https://www.linkedin.com/in/ayush0309/" },
 ];
 

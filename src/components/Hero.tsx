@@ -57,7 +57,7 @@ export default function Hero() {
             See the work
           </a>
           <a
-            href="mailto:ayush.garg2027@mastersunion.org"
+            href="mailto:officialayushgarg@gmail.com"
             className="focus-ring rounded-full border px-6 py-3 text-sm font-semibold"
             style={{ borderColor: "var(--ink)", color: "var(--ink)" }}
           >
