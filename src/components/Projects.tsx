@@ -40,6 +40,15 @@ const PROJECTS = [
     href: "https://ayush-0309.github.io/roof-repairs-london/",
   },
   {
+    title: "Interior Design Studio Template",
+    stack: "Web Design · Client Template",
+    time: "2026",
+    detail:
+      "A reusable, config-driven website template for interior design studios — rebrand it for any client through a single config file, with a portfolio grid, services, testimonials, and a consultation-booking form built in.",
+    featured: false,
+    href: "https://ayush-0309.github.io/interior-design-template/",
+  },
+  {
     title: "Cricket Analytics Dashboard",
     stack: "Power BI · Python",
     time: "Jul 2025",
