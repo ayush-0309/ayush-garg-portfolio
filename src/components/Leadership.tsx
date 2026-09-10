@@ -14,6 +14,7 @@ const CERTS = [
 ];
 
 const HONOURS = [
+  { year: "2026", title: "Winner, Marketing Strategies — One Day Challenge, Masters' Union" },
   { year: "2018", title: "National Champion (U-16), Javelin Throw — National Youth Games Committee" },
   { year: "2017", title: "Certificate of Merit — Subject Topper in Mathematics (97%)" },
 ];
