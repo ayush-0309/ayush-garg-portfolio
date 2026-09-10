@@ -121,14 +121,13 @@ export default function About() {
           <p className="text-xs font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--accent)" }}>
             Skills
           </p>
-          <div className="mt-5 flex flex-col gap-5">
+          <div className="mt-5 grid gap-x-8 gap-y-8 sm:grid-cols-3">
             {SKILL_GROUPS.map((g) => (
-              <div key={g.group} className="flex flex-wrap items-center gap-x-3 gap-y-2.5">
-                <span className="shrink-0 text-xs font-semibold uppercase tracking-[0.1em]" style={{ color: "var(--ink-faint)" }}>
+              <div key={g.group}>
+                <p className="text-xs font-semibold uppercase tracking-[0.1em]" style={{ color: "var(--ink-faint)" }}>
                   {g.group}
-                </span>
-                <span className="hidden h-px flex-1 sm:block" style={{ background: "var(--line)" }} />
-                <div className="flex flex-wrap gap-2">
+                </p>
+                <div className="mt-3 flex flex-wrap gap-2">
                   {g.skills.map((skill) => (
                     <span
                       key={skill}
