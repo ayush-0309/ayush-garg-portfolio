@@ -31,13 +31,13 @@ const PROJECTS = [
     href: "https://www.youtube.com/watch?v=sN6DwEsyUS4",
   },
   {
-    title: "Roof Repairs London",
+    title: "M&A Roofing Carlow",
     stack: "Web Design · Client Project",
     time: "2026",
     detail:
-      "A lead-generation website built for a London roofing company — service pages, trust signals, and a quote-request flow designed to convert emergency and same-day repair enquiries.",
+      "A lead-generation website for a family-run Irish roofing company — service pages, a coverage-area map, reviews, and a quote-request form built to convert local search traffic into calls.",
     featured: false,
-    href: "https://ayush-0309.github.io/roof-repairs-london/",
+    href: "https://ayush-0309.github.io/ma-roofing/",
   },
   {
     title: "Interior Design Studio Template",
