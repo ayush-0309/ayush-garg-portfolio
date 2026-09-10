@@ -10,9 +10,20 @@ const STATS = [
 ];
 
 const SKILL_GROUPS = [
-  { group: "Business", skills: ["Strategic thinking", "Stakeholder management", "Project management"] },
-  { group: "Analytics", skills: ["Power BI", "SQL", "Python"] },
-  { group: "Technical", skills: ["C / C++", "Linux", "Git"] },
+  {
+    group: "Business",
+    skills: [
+      "Strategic thinking",
+      "Business analysis",
+      "Stakeholder management",
+      "Cross-functional collaboration",
+      "Project management",
+      "Problem solving",
+      "Process optimization",
+    ],
+  },
+  { group: "Analytics", skills: ["Dashboarding", "Data analysis", "Power BI", "SQL", "Python", "Advanced Excel"] },
+  { group: "Technical", skills: ["C / C++", "Linux", "Bash", "Git", "JIRA", "Claude Code"] },
 ];
 
 export default function About() {
@@ -29,7 +40,7 @@ export default function About() {
             About
           </p>
           <h2 className="mt-4 text-4xl sm:text-5xl" style={{ color: "var(--ink)" }}>
-            From firmware to strategy.
+            From engineering to strategy.
           </h2>
           <div className="mt-8 grid grid-cols-3 gap-4 border-y py-6" style={{ borderColor: "var(--line)" }}>
             {STATS.map((s) => (
@@ -54,10 +65,10 @@ export default function About() {
           <p className="text-lg leading-relaxed" style={{ color: "var(--ink-soft)" }}>
             I&rsquo;m pursuing a PGP in Technology &amp; Business Management at
             Masters&rsquo; Union, after a B.Tech in Computer Science &amp; Business
-            Systems at VIT (8.35 CGPA) and nineteen months as a Systems Engineer at
-            Tata Consultancy Services — writing embedded C/C++ for medical devices,
-            debugging distributed systems, and translating functional requirements
-            into working software.
+            Systems at VIT (8.35 CGPA) and nineteen months as a Software Engineer at
+            Tata Consultancy Services — where I worked on a firmware project for
+            medical devices, writing C/C++, debugging distributed systems, and
+            translating functional requirements into working software.
           </p>
           <p className="mt-4 text-lg leading-relaxed" style={{ color: "var(--ink-soft)" }}>
             What I actually enjoyed about that job wasn&rsquo;t the code — it was the
